@@ -77,7 +77,8 @@ function parseShowInterfaces(stdout) {
       signal_level: networkUtils.dBFromQuality(tmpConnection.signal),
       quality: parseFloat(tmpConnection.signal),
       security: tmpConnection.authentication,
-      security_flags: tmpConnection.encryption
+      security_flags: tmpConnection.encryption,
+      state: tmpConnection.state
     });
 
     i = i + numberOfLines;
