@@ -39,7 +39,8 @@ We wish to be clear in saying that this module is inspired from [node-wifi-contr
 
 ```bash
 # Use as a module
-npm install node-wifi
+# npm install node-wifi
+yarn add git+https://github.com/acall-inc/node-wifi#custom
 ```
 
 ## Getting started
@@ -81,7 +82,7 @@ wifi.scan((error, networks) => {
 
 // Connect to a network
 wifi.connect({ ssid: 'ssid', password: 'password' }, () => {
-  console.log('Connected'); 
+  console.log('Connected');
   // on windows, the callback is called even if the connection failed due to netsh limitations
   // if your software may work on windows, you should use `wifi.getCurrentConnections` to check if the connection succeeded
 });
@@ -167,7 +168,7 @@ Linux:
 
 Windows:
 
-- netsh 
+- netsh
 
 MacOS:
 
